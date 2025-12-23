@@ -21,7 +21,6 @@ const FoodFinder: React.FC = () => {
   const [sortBy, setSortBy] = useState<string>('name');
   const [showFilters, setShowFilters] = useState(false);
   const [selectedFood, setSelectedFood] = useState<StreetFood | null>(null);
-  const [randomFood, setRandomFood] = useState<StreetFood | null>(null);
   const [mealSuggestion, setMealSuggestion] = useState<any>(null);
 
   const { favorites, toggleFavorite, isFavorite } = useFavorites();
@@ -52,7 +51,6 @@ const FoodFinder: React.FC = () => {
 
   const handleSurpriseMe = () => {
     const randomSelection = getRandomFood(streetFoods);
-    setRandomFood(randomSelection);
     setSelectedFood(randomSelection);
   };
 

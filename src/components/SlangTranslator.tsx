@@ -9,7 +9,6 @@ const SlangTranslator: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [translationMode, setTranslationMode] = useState<'english-to-bambaiya' | 'bambaiya-to-english'>('english-to-bambaiya');
   const [selectedSlang, setSelectedSlang] = useState<BambaiyaSlang | null>(null);
-  const [randomSlang, setRandomSlang] = useState<BambaiyaSlang | null>(null);
   const [showQuiz, setShowQuiz] = useState(false);
   const [quizScore, setQuizScore] = useState(0);
   const [currentQuizIndex, setCurrentQuizIndex] = useState(0);
@@ -49,7 +48,6 @@ const SlangTranslator: React.FC = () => {
   const handleRandomSlang = () => {
     const randomIndex = Math.floor(Math.random() * bambaiyaSlang.length);
     const random = bambaiyaSlang[randomIndex];
-    setRandomSlang(random);
     setSelectedSlang(random);
   };
 

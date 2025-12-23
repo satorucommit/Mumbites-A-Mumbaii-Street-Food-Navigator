@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import HomePage from './pages/HomePage';
 import FoodFinder from './components/FoodFinder';

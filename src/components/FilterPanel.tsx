@@ -107,10 +107,10 @@ const FilterPanel: React.FC<FilterPanelProps> = ({ filters, onFiltersChange, onC
           <h4 className="font-medium text-gray-900 mb-3">Spice Level</h4>
           <div className="space-y-2">
             {[
-              { level: 'Mild', color: 'text-green-600', emoji: '🟢' },
-              { level: 'Medium', color: 'text-yellow-600', emoji: '🟡' },
-              { level: 'Hot', color: 'text-red-600', emoji: '🔴' }
-            ].map(({ level, color, emoji }) => (
+              { level: 'Mild', emoji: '🟢' },
+              { level: 'Medium', emoji: '🟡' },
+              { level: 'Hot', emoji: '🔴' }
+            ].map(({ level, emoji }) => (
               <label key={level} className="flex items-center space-x-2 cursor-pointer">
                 <input
                   type="checkbox"
