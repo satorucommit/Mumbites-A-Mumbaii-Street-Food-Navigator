@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "mumbai-food-context": {
+      "command": "node",
+      "args": [".kiro/mcp-server.js"],
+      "disabled": false,
+      "autoApprove": ["get_food_data", "get_slang_data", "get_neighborhood_data"]
+    }
+  }
+}
